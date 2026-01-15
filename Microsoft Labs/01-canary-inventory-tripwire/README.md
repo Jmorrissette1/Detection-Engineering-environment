@@ -6,6 +6,11 @@ This lab simulates a realistic Windows 11 shared folder that contains sensitive-
 
 This Windows VM is monitored using **Microsoft Defender for Endpoint (MDE)** to validate logon activity and endpoint process evidence.
 
+## 🎯 Objective
+Detect and investigate suspicious access to internal documentation (recon behavior) by deploying a deception tripwire inside:
+
+`C:\Users\Public\Inventory`
+
 
 <img width="526" height="864" alt="Canary Alert" src="https://github.com/user-attachments/assets/735755d5-d20b-4443-9c5d-a852856f2561" />
 
@@ -31,6 +36,7 @@ DeviceProcessEvents
 
 
 <img width="900" height="141" alt="confirm acess of file" src="https://github.com/user-attachments/assets/d3fe20d9-2834-45af-ba47-8c010012a179" />
+
 
 
 
