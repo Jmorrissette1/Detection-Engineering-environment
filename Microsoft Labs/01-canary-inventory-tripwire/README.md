@@ -11,6 +11,12 @@ Detect and investigate suspicious access to internal documentation (recon behavi
 
 `C:\Users\Public\Inventory`
 
+## 🧱 Lab Setup
+- **Endpoint:** Windows 11 VM (`win-11-v`)
+- **Remote Access:** Guacamole RDP
+- **Detection Source:** Canarytokens (email alert)
+- **Investigation Platform:** Microsoft Defender for Endpoint (MDE)
+
 
 <img width="526" height="864" alt="Canary Alert" src="https://github.com/user-attachments/assets/735755d5-d20b-4443-9c5d-a852856f2561" />
 
@@ -36,6 +42,7 @@ DeviceProcessEvents
 
 
 <img width="900" height="141" alt="confirm acess of file" src="https://github.com/user-attachments/assets/d3fe20d9-2834-45af-ba47-8c010012a179" />
+
 
 
 
