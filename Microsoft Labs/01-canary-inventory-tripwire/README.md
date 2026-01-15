@@ -72,8 +72,10 @@ Confirmed msedge.exe opened network_layout.pdf and initiated the Canarytokens ca
 
 
 
-<img width="1277" height="328" alt="image" src="https://github.com/user-attachments/assets/22647d3c-0d7e-4476-8247-7df075936683" />
+<img width="1090" height="325" alt="image" src="https://github.com/user-attachments/assets/2614b7d9-7376-4e89-a24f-5ecc4f85b193" />
+
 <img width="1133" height="340" alt="image" src="https://github.com/user-attachments/assets/2e175e7a-c5f7-49f1-b5e9-2ac7a8664c96" />
+
 
 
 
