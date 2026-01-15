@@ -38,7 +38,8 @@ Contents:
 - **File accessed:** `network_layout.pdf`
 - **Opened by:** `msedge.exe`
 
-<img width="526" height="864" alt="Canary Alert" src="https://github.com/user-attachments/assets/735755d5-d20b-4443-9c5d-a852856f2561" />
+<img width="666" height="944" alt="Canary Alert" src="https://github.com/user-attachments/assets/a8832ee8-c81b-4565-892d-799be25823d0" />
+
 
 MDE Investigation
 
@@ -66,6 +67,7 @@ DeviceProcessEvents
 ```
 Confirmed msedge.exe opened network_layout.pdf and initiated the Canarytokens callout.
 <img width="1277" height="328" alt="image" src="https://github.com/user-attachments/assets/22647d3c-0d7e-4476-8247-7df075936683" />
+
 
 
 
