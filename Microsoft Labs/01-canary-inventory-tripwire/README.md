@@ -34,7 +34,7 @@ Contents:
 ## Alert Details (Canarytokens)
 - **Time of alert:** 2026-01-15 17:50 UTC (21:50 PST)
 - **Token Type:** Windows Fake File System
-- **Source IP:** 52.167.104.156
+- **Source IP:** 52.X.X.X
 - **File accessed:** `network_layout.pdf`
 - **Opened by:** `msedge.exe`
 
@@ -66,6 +66,7 @@ DeviceProcessEvents
 ```
 Confirmed msedge.exe opened network_layout.pdf and initiated the Canarytokens callout.
 <img width="1277" height="328" alt="image" src="https://github.com/user-attachments/assets/22647d3c-0d7e-4476-8247-7df075936683" />
+
 
 
 
