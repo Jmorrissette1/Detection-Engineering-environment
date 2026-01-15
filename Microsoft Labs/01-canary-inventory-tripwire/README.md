@@ -72,10 +72,13 @@ Confirmed msedge.exe opened network_layout.pdf and initiated the Canarytokens ca
 
 
 Figure 1: PDF opened from Public Inventory
+
 <img width="1090" height="325" alt="image" src="https://github.com/user-attachments/assets/2614b7d9-7376-4e89-a24f-5ecc4f85b193" />
 
 Figure 2: Canarytokens callout initiated by Edge
+
 <img width="1133" height="340" alt="image" src="https://github.com/user-attachments/assets/2e175e7a-c5f7-49f1-b5e9-2ac7a8664c96" />
+
 
 
 
