@@ -69,7 +69,13 @@ DeviceProcessEvents
 | order by Timestamp asc
 ```
 Confirmed msedge.exe opened network_layout.pdf and initiated the Canarytokens callout.
+
+
+
 <img width="1277" height="328" alt="image" src="https://github.com/user-attachments/assets/22647d3c-0d7e-4476-8247-7df075936683" />
+<img width="1133" height="340" alt="image" src="https://github.com/user-attachments/assets/6fce74c0-aae6-4f6c-ac70-b861d9204ed6" />
+
+
 
 
 
