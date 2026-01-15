@@ -60,7 +60,9 @@ DeviceProcessEvents
 | order by Timestamp asc
 
 
-<img width="900" height="141" alt="confirm acess of file" src="https://github.com/user-attachments/assets/d3fe20d9-2834-45af-ba47-8c010012a179" />
+<img width="1277" height="328" alt="image" src="https://github.com/user-attachments/assets/22647d3c-0d7e-4476-8247-7df075936683" />
+
+
 
 
 
