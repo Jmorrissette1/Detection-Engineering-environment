@@ -12,4 +12,4 @@ This repo contains hands-on detection engineering and SOC investigation labs bui
 - Deception tripwires (Canarytokens)
 
 ## Labs
-- ✅ [01 - Canary Public Inventory Tripwire](labs/01-canary-public-inventory-tripwire/README.md)
+- ✅ [01 - Canary Public Inventory Tripwire](labs/01-canary-public-inventory-tripwire/README.md](https://github.com/TugFury/Detection-Engineering-Lab/tree/main/Microsoft%20Labs/01-canary-inventory-tripwire)
