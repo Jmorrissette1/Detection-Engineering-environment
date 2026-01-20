@@ -7,11 +7,12 @@
 
 2) **Splunk failed logons spike chart**
    - `timechart` for 4625
-     
+    
+```spl    
 index=winlogs sourcetype=XmlWinEventLog EventCode=4625 earliest=-60m
 | stats count as failed_logons by user
 | sort - failed_logons
-
+```
 <img width="1433" height="429" alt="image" src="https://github.com/user-attachments/assets/efb03471-bdd0-417b-9cb6-ac164a61cabb" />
 
 
@@ -60,6 +61,7 @@ Evidence: Successful logon observed (EventCode 4624) for bschultz after failures
 
 T1005 - Data from Local System
 Evidence: Canary tripwire triggered when network_layout.pdf was accessed
+
 
 
 
