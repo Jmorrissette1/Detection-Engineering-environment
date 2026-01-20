@@ -1,3 +1,5 @@
+# Brute Force → Successful Logon → Canary Tripwire (Splunk Investigation)
+
 ## Overview
 
 This lab simulates a focused brute-force attack against a single Active Directory user account in an internal lab environment. After repeated failed logon attempts, a successful authentication occurs and a deception-based Canarytokens tripwire triggers when a decoy document is accessed.
@@ -66,6 +68,7 @@ Evidence: Successful logon observed (EventCode 4624) for bschultz after failures
 
 T1005 - Data from Local System
 Evidence: Canary tripwire triggered when network_layout.pdf was accessed
+
 
 
 
