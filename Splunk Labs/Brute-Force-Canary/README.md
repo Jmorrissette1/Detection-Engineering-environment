@@ -22,6 +22,14 @@ Detect and validate the authentication attack chain:
 - **Deception tool:** Canarytokens (Fake File System token)
 - **Environment:** Internal lab only (not public-facing)
 
+- 
+## Deception Setup
+A decoy document was placed on the system to validate post-authentication intent.
+
+Decoy:
+- `network_layout.pdf`
+
+
 1) **Inventory folder setup**
    - `C:\Users\bschultz\Documents\Assets` showing bait file(s)
 
@@ -83,6 +91,7 @@ Evidence: Successful logon observed (EventCode 4624) for bschultz after failures
 
 T1005 - Data from Local System
 Evidence: Canary tripwire triggered when network_layout.pdf was accessed
+
 
 
 
