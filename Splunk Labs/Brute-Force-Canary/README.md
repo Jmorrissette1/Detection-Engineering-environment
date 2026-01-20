@@ -41,7 +41,7 @@ Contents:
 
 
 ## Alert Details (Canarytokens)
-- **Time of alert:** 2026-01-15 17:50 UTC (21:50 PST)
+- **Time of alert:** 2026-01-15 01:32 UTC  (17:23 PST)
 - **Token Type:** Windows Fake File System
 - **Source IP:** 192.X.X.X
 - **File accessed:** `network_layout.pdf`
@@ -51,13 +51,9 @@ Contents:
 
 
 
+Splunk Investigation
 
-
-
-
-
-2) **Splunk failed logons spike chart**
-   - `timechart` for 4625
+SPL Query to Establish EventCode= 4625 (Failed Logon Activity) to confirm eveidence of a brute force. 
     
 ```spl    
 index=winlogs sourcetype=XmlWinEventLog EventCode=4625 earliest=-60m
@@ -66,33 +62,33 @@ index=winlogs sourcetype=XmlWinEventLog EventCode=4625 earliest=-60m
 ```
 <img width="1433" height="429" alt="image" src="https://github.com/user-attachments/assets/efb03471-bdd0-417b-9cb6-ac164a61cabb" />
 
-
-3) **Splunk 4625 table targeting bschultz**
-   - failed_logons count
-  
- 
+SPL Query to Establish EventCode= 4625 (Failed Logon Activity) counts
+   
+```sp1
 index=winlogs sourcetype=XmlWinEventLog EventCode=4625 earliest=-60m (user="bschultz" OR user="*\\bschultz")
 | stats count as failed_logons by user, host
 | sort - failed_logons
+```
 
 <img width="1443" height="432" alt="image" src="https://github.com/user-attachments/assets/ce5744f5-1d20-41b0-99b8-d06b6ca7f36e" />
 
-4) **Splunk 4624 successful logon**
-   - shows access occurred
-   
+
+SPL Query to Establish EventCode= 4624 (Successful Logon Activity) 
+
+```spl
 index=winlogs sourcetype=XmlWinEventLog EventCode=4624 earliest=-60m (user="bschultz" OR user="*\\bschultz")
 | stats count as successful_logons by user, host, LogonType
 | sort - successful_logons
 <img width="2545" height="567" alt="image" src="https://github.com/user-attachments/assets/b341ccca-d88b-4885-8a5c-adb9b01e2de1" />
+```
+SPL Query to show failures and succcesses side by side.
 
-
-5) **Splunk correlation table**
-   - failures + successes side by side
-
+```spl
 index=winlogs sourcetype=XmlWinEventLog earliest=-60m (EventCode=4624 OR EventCode=4625) user="bschultz"
 | eval event_type=case(EventCode=4625, "failure", EventCode=4624, "success")
 | stats count(eval(event_type="failure")) as failures count(eval(event_type="success")) as successes by host
 | where failures > 0 OR successes > 0
+```
 
 <img width="2555" height="428" alt="image" src="https://github.com/user-attachments/assets/7620c082-45bb-442c-b929-1035b6b8da9e" />
 
@@ -107,6 +103,7 @@ Evidence: Successful logon observed (EventCode 4624) for bschultz after failures
 
 T1005 - Data from Local System
 Evidence: Canary tripwire triggered when network_layout.pdf was accessed
+
 
 
 
