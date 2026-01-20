@@ -52,6 +52,7 @@ index=winlogs sourcetype=XmlWinEventLog earliest=-60m (EventCode=4624 OR EventCo
 
 
 
+The attacker created a temporary staging directory (C:\Users\Public\TempData) and copied internal documentation into it to simulate collection/staging prior to further actions
 
 
 
