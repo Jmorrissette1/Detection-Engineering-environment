@@ -26,14 +26,33 @@ Detect and validate the authentication attack chain:
 ## Deception Setup
 A decoy document was placed on the system to validate post-authentication intent.
 
-Decoy:
-- `network_layout.pdf`
-
-
-1) **Inventory folder setup**
-   - `C:\Users\bschultz\Documents\Assets` showing bait file(s)
+Path:
+`C:\Users\bschultz\Documents\Assets`
+     
+Contents:
+- `Hardware/`
+- `Servers/`
+- `Software/`
+- `Mac Addresses` (doc) 
+- `network_layout.pdf` (high-value bait)
      
 <img width="1123" height="592" alt="image" src="https://github.com/user-attachments/assets/4a3ff543-cf2a-495c-8d61-849795a5a7e6" />
+
+
+
+## Alert Details (Canarytokens)
+- **Time of alert:** 2026-01-15 17:50 UTC (21:50 PST)
+- **Token Type:** Windows Fake File System
+- **Source IP:** 52.X.X.X
+- **File accessed:** `network_layout.pdf`
+- **Opened by:** `msedge.exe`
+
+<img width="493" height="747" alt="image" src="https://github.com/user-attachments/assets/06bc599c-4f44-4db4-b0fe-63c0163a9aa9" />
+
+
+
+
+
 
 
 
@@ -77,11 +96,6 @@ index=winlogs sourcetype=XmlWinEventLog earliest=-60m (EventCode=4624 OR EventCo
 
 <img width="2555" height="428" alt="image" src="https://github.com/user-attachments/assets/7620c082-45bb-442c-b929-1035b6b8da9e" />
 
-6) **Canarytokens alert email**
-   - redacted token ID + URL
-
-<img width="493" height="747" alt="image" src="https://github.com/user-attachments/assets/06bc599c-4f44-4db4-b0fe-63c0163a9aa9" />
-
 
 MITRE techniques
 
@@ -93,6 +107,7 @@ Evidence: Successful logon observed (EventCode 4624) for bschultz after failures
 
 T1005 - Data from Local System
 Evidence: Canary tripwire triggered when network_layout.pdf was accessed
+
 
 
 
