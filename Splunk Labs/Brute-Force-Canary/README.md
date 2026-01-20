@@ -57,6 +57,12 @@ The attacker created a temporary staging directory (C:\Users\Public\TempData) an
 
 
 
+<img width="1108" height="612" alt="image" src="https://github.com/user-attachments/assets/ff6a5799-8a9d-4a26-8c94-444c1de194aa" />
+
+<img width="1121" height="590" alt="image" src="https://github.com/user-attachments/assets/fda962c2-6efc-4a41-9a98-27ee9cca2e94" />
+
+
+
 
 
 
