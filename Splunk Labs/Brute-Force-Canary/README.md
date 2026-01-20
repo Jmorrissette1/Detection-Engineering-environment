@@ -12,6 +12,17 @@ Detect and validate the authentication attack chain:
 
 **4625 Failed Logons → 4624 Successful Logon → Canary Trigger**
 
+## Lab Environment
+- **SIEM:** Splunk
+- **Windows telemetry source:** Windows Event Logs
+- **Splunk index:** `winlogs`
+- **Splunk sourcetype:** `XmlWinEventLog`
+- **Victim account:** `bschultz`
+- **Decoy file:** `network_layout.pdf`
+- **Deception tool:** Canarytokens (Fake File System token)
+- **Environment:** Internal lab only (not public-facing)
+- 
+
 1) **Inventory folder setup**
    - `C:\Users\bschultz\Documents\Assets` showing bait file(s)
 
@@ -73,6 +84,7 @@ Evidence: Successful logon observed (EventCode 4624) for bschultz after failures
 
 T1005 - Data from Local System
 Evidence: Canary tripwire triggered when network_layout.pdf was accessed
+
 
 
 
