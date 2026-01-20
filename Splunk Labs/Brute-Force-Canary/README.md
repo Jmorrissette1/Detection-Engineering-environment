@@ -51,17 +51,16 @@ index=winlogs sourcetype=XmlWinEventLog earliest=-60m (EventCode=4624 OR EventCo
 <img width="493" height="747" alt="image" src="https://github.com/user-attachments/assets/06bc599c-4f44-4db4-b0fe-63c0163a9aa9" />
 
 
+MITRE techniques
 
-The attacker created a temporary staging directory (C:\Users\Public\TempData) and copied internal documentation into it to simulate collection/staging prior to further actions
+T1110 - Brute Force
+Evidence: Repeated failed logons (EventCode 4625) targeting bschultz
 
+T1078 - Valid Accounts
+Evidence: Successful logon observed (EventCode 4624) for bschultz after failures
 
-
-
-<img width="1108" height="612" alt="image" src="https://github.com/user-attachments/assets/ff6a5799-8a9d-4a26-8c94-444c1de194aa" />
-
-<img width="1121" height="590" alt="image" src="https://github.com/user-attachments/assets/fda962c2-6efc-4a41-9a98-27ee9cca2e94" />
-
-
+T1005 - Data from Local System
+Evidence: Canary tripwire triggered when network_layout.pdf was accessed
 
 
 
