@@ -1,5 +1,4 @@
 
-<img width="493" height="747" alt="image" src="https://github.com/user-attachments/assets/06bc599c-4f44-4db4-b0fe-63c0163a9aa9" />
 
 
 
@@ -9,6 +8,7 @@
 index=winlogs sourcetype=XmlWinEventLog EventCode=4625 earliest=-60m
 | stats count as failed_logons by user
 | sort - failed_logons
+
 
 
 
@@ -36,3 +36,7 @@ index=winlogs sourcetype=XmlWinEventLog earliest=-60m (EventCode=4624 OR EventCo
 | where failures > 0 OR successes > 0
 
 <img width="2555" height="428" alt="image" src="https://github.com/user-attachments/assets/7620c082-45bb-442c-b929-1035b6b8da9e" />
+
+
+<img width="493" height="747" alt="image" src="https://github.com/user-attachments/assets/06bc599c-4f44-4db4-b0fe-63c0163a9aa9" />
+
