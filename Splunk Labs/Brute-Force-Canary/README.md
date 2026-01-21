@@ -36,7 +36,7 @@ Contents:
 - `Mac Addresses` (doc) 
 - `network_layout.pdf` (high-value bait)
      
-<img width="1123" height="592" alt="image" src="https://github.com/user-attachments/assets/4a3ff543-cf2a-495c-8d61-849795a5a7e6" />
+<img width="1123" height="592" alt="Folder Structure" src="https://github.com/user-attachments/assets/4a3ff543-cf2a-495c-8d61-849795a5a7e6" />
 
 
 
@@ -47,7 +47,7 @@ Contents:
 - **File accessed:** `network_layout.pdf`
 - **Opened by:** `msedge.exe`
 
-<img width="493" height="747" alt="image" src="https://github.com/user-attachments/assets/06bc599c-4f44-4db4-b0fe-63c0163a9aa9" />
+<img width="493" height="747" alt="Canary Alert" src="https://github.com/user-attachments/assets/06bc599c-4f44-4db4-b0fe-63c0163a9aa9" />
 
 
 
@@ -59,7 +59,7 @@ index=winlogs earliest=-72h ("EventCode=4625" OR "Event ID: 4625" OR "4625")
 | timechart span=15m count as failed_logons
 ```
 
-<img width="1519" height="425" alt="image" src="https://github.com/user-attachments/assets/1174cd3b-33e6-4c1b-b928-96100ec967b6" />
+<img width="1519" height="425" alt="Failed logon spike over time" src="https://github.com/user-attachments/assets/1174cd3b-33e6-4c1b-b928-96100ec967b6" />
 
 
 
@@ -71,7 +71,7 @@ index=winlogs sourcetype=XmlWinEventLog EventCode=4625 earliest=-60m
 | stats count as failed_logons by user
 | sort - failed_logons
 ```
-<img width="1433" height="429" alt="image" src="https://github.com/user-attachments/assets/efb03471-bdd0-417b-9cb6-ac164a61cabb" />
+<img width="1433" height="429" alt="failed logins by user" src="https://github.com/user-attachments/assets/efb03471-bdd0-417b-9cb6-ac164a61cabb" />
 
 
 ## 3) Failed Logons (4625) Victim Account Evidence
@@ -84,7 +84,7 @@ index=winlogs sourcetype=XmlWinEventLog EventCode=4625 earliest=-60m (user="bsch
 | sort - failed_logons
 ```
 
-<img width="1443" height="432" alt="image" src="https://github.com/user-attachments/assets/ce5744f5-1d20-41b0-99b8-d06b6ca7f36e" />
+<img width="1443" height="432" alt="failed logons count" src="https://github.com/user-attachments/assets/ce5744f5-1d20-41b0-99b8-d06b6ca7f36e" />
 
 ## 4) Successful Logons (4624) — Access Confirmed
 SPL Query to Establish EventCode= 4624 (Successful Logon Activity) 
@@ -173,6 +173,7 @@ Evidence: Successful logon observed (EventCode 4624) for bschultz after failures
 T1005 - Data from Local System
 Evidence: Canary tripwire triggered when network_layout.pdf was accessed
 ```
+
 
 
 
