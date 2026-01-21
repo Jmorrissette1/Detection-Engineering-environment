@@ -64,7 +64,7 @@ index=winlogs earliest=-72h ("EventCode=4625" OR "Event ID: 4625" OR "4625")
 
 
 ## 2) Failed Logons (4625) — Brute Force Evidence
-SPL Query to Establish EventCode= 4625 (Failed Logon Activity) to confirm eveidence of a brute force. 
+SPL Query to Establish EventCode= 4625 (Failed Logon Activity) to confirm evidence of a brute force. 
     
 ```spl    
 index=winlogs sourcetype=XmlWinEventLog EventCode=4625 earliest=-60m
@@ -173,6 +173,7 @@ Evidence: Successful logon observed (EventCode 4624) for bschultz after failures
 T1005 - Data from Local System
 Evidence: Canary tripwire triggered when network_layout.pdf was accessed
 ```
+
 
 
 
