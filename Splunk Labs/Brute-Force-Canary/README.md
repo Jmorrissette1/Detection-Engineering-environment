@@ -59,7 +59,8 @@ index=winlogs earliest=-72h ("EventCode=4625" OR "Event ID: 4625" OR "4625")
 | timechart span=15m count as failed_logons
 ```
 
-<img width="1592" height="423" alt="image" src="https://github.com/user-attachments/assets/50a7b811-e922-4e23-bc81-db21c6685ab0" />
+<img width="1519" height="425" alt="image" src="https://github.com/user-attachments/assets/1174cd3b-33e6-4c1b-b928-96100ec967b6" />
+
 
 
 ## 2) Failed Logons (4625) — Brute Force Evidence
@@ -172,6 +173,7 @@ Evidence: Successful logon observed (EventCode 4624) for bschultz after failures
 T1005 - Data from Local System
 Evidence: Canary tripwire triggered when network_layout.pdf was accessed
 ```
+
 
 
 
